@@ -174,7 +174,7 @@ leakdecode-bench --no-hw        # skip the C++ stage
 `leakdecode-bench` deletes `results/` and regenerates every CSV and plot. Its seeds are fixed, so the Monte Carlo
 numbers reproduce exactly. Timings will differ by machine.
 The C++ decoder builds with CMake (`cmake -S hw -B hw/build && cmake --build hw/build`) or GNU make (`make -C hw`).
-The dev box had no GNU make, so locally I used the CMake + Ninja path from pip. The make path is what the CI workflow uses; that workflow has not run yet (no remote).
+The dev box had no GNU make, so locally I used the CMake + Ninja path from pip. CI (GitHub Actions, Python 3.11 and 3.12) builds the C++ with CMake, runs ctest and pytest, then the quick bench; the first run passed on 30 Oct 2026.
 The bench builds it automatically and records any failure in `results/run_info.json` instead of crashing.
 
 Layout: `src/leakdecode/` (circuits, heralds, decoders, sim, stats, analysis, timing, plots, export, hwbench, bench),
