@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# C++ compiler shim: use system g++/clang++ if present, else zig's bundled clang (pip install ziglang).
+if command -v g++ >/dev/null 2>&1; then exec g++ "$@"; fi
+if command -v clang++ >/dev/null 2>&1; then exec clang++ "$@"; fi
+HERE="$(cd "$(dirname "$0")/../.." && pwd)"
+PY="${PYTHON:-$HERE/.venv/bin/python}"
+exec "$PY" -m ziglang c++ "$@"

@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+hw/build/
+build/
+client.log
+PLAN.md
+docs/review/audit_rerun_2026-10-30/

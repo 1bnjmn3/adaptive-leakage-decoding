@@ -1,0 +1,10 @@
+distance,rounds,p,p_leak,decoder,method,shots,us_per_shot,us_per_round,frac_shots_with_herald
+3,3,0.002,0.005,pymatching_static,decode_batch (C++ loop),4000,0.10912549987551756,0.03637516662517252,0.2275
+3,3,0.002,0.005,pymatching_static,python loop of decode(),4000,2.7219149997108616,0.9073049999036206,0.2275
+3,3,0.002,0.005,pymatching_adaptive,"python loop, reweight+decode+restore",4000,8.568053501221584,2.856017833740528,0.2275
+5,5,0.002,0.005,pymatching_static,decode_batch (C++ loop),4000,1.0724240019044373,0.21448480038088746,0.7105
+5,5,0.002,0.005,pymatching_static,python loop of decode(),4000,4.0235842498077545,0.8047168499615509,0.7105
+5,5,0.002,0.005,pymatching_adaptive,"python loop, reweight+decode+restore",4000,144.33249099965906,28.86649819993181,0.7105
+7,7,0.002,0.005,pymatching_static,decode_batch (C++ loop),4000,3.698638000059873,0.5283768571514104,0.9665
+7,7,0.002,0.005,pymatching_static,python loop of decode(),4000,6.856357500510057,0.9794796429300082,0.9665
+7,7,0.002,0.005,pymatching_adaptive,"python loop, reweight+decode+restore",4000,652.5582579997717,93.22260828568167,0.9665

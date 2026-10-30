@@ -1,0 +1,51 @@
+{
+  "mode": "full",
+  "p": 0.002,
+  "leak_on": [
+    "data",
+    "ancilla"
+  ],
+  "config": {
+    "distances": [
+      3,
+      5,
+      7
+    ],
+    "leak_rates": [
+      0.0,
+      0.001,
+      0.002,
+      0.005,
+      0.01,
+      0.02
+    ],
+    "max_shots": {
+      "3": 1000000,
+      "5": 600000,
+      "7": 600000
+    },
+    "max_errors": 500,
+    "chunk": 25000,
+    "timing_shots": 4000,
+    "hw_shots": 20000,
+    "hw_distances": [
+      3,
+      5,
+      7,
+      9,
+      11
+    ]
+  },
+  "workers": 6,
+  "seed": 12345,
+  "sweep_seconds": 353.3432881832123,
+  "total_seconds": 490.33437871932983,
+  "hw_status": "ok",
+  "python": "3.13.5",
+  "stim": "1.16.0",
+  "pymatching": "2.4.0",
+  "numpy": "2.5.4",
+  "machine": "x86_64",
+  "cpu_count": 8,
+  "finished": "2026-10-30 18:24:47 GMT"
+}
