@@ -178,7 +178,6 @@ The dev box had no GNU make, so locally I used the CMake + Ninja path from pip. 
 The bench builds it automatically and records any failure in `results/run_info.json` instead of crashing.
 
 Layout: `src/leakdecode/` (circuits, heralds, decoders, sim, stats, analysis, timing, plots, export, hwbench, bench),
-`hw/` (C++ union-find, `INTERFACE.md`, `FPGA_NOTE.md`), `tests/`, `docs/`, and `LEARN.md`, a guided tour of the
-physics, the code, the plots and likely interview questions.
+`hw/` (C++ union-find, `INTERFACE.md`, `FPGA_NOTE.md`), `tests/` and `docs/`.
 
 Built with AI assistance; I designed the experiments and can explain every result.
